@@ -18,13 +18,12 @@ require 'functions.php';
 add_shortcode('converter', 'cc_root');
 
 function cc_root() {
-    $result = 3;
     echo "
     <div id='cc_container-main'>
         <div id='cc_container-top'>
                 <label for='cc_rate-choice'>Choisir un taux de conversion : </label>
                 <select name='rate-choice' id='cc_rate-choice'>
-                    
+                
                 </select>
         </div>
         <input type='number' pattern='\d*' placeholder='Euros'/>
